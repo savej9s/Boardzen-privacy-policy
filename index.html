@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#11152b">
+<meta name="description" content="Boardzen Privacy Policy">
+<title>Privacy Policy | Boardzen</title>
+
+<style>
+:root {
+  color-scheme: dark;
+  --bg: #0c1022;
+  --panel: #151b34;
+  --line: #30395e;
+  --text: #f4f5ff;
+  --muted: #b8bfdc;
+  --accent: #a99bff;
+  --purple: #7c6cf2;
+}
+
+* { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 20px;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(ellipse at 80% 0%, #7c6cf226, transparent 36%), var(--bg);
+  color: var(--text);
+  font: 16px/1.72 system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+a {
+  color: #c5bcff;
+  overflow-wrap: anywhere;
+}
+
+.wrap {
+  width: min(1080px, calc(100% - 32px));
+  margin: auto;
+}
+
+.top { padding: 24px 0; }
+
+.brand {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  font-weight: 800;
+}
+
+.logo {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  background: linear-gradient(145deg, #9b8cff, #5c4ed1);
+  font-size: 22px;
+}
+
+.brand small {
+  display: block;
+  color: var(--muted);
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.hero { padding: 38px 0 26px; }
+
+.tag {
+  display: inline-block;
+  background: #28234a;
+  border: 1px solid #4b427d;
+  border-radius: 99px;
+  padding: 5px 12px;
+  color: #d3cdff;
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: .7px;
+}
+
+.hero h1 {
+  font-size: clamp(36px, 6vw, 58px);
+  line-height: 1.1;
+  letter-spacing: -1.5px;
+  margin: 18px 0 12px;
+}
+
+.hero p {
+  max-width: 760px;
+  color: var(--muted);
+  font-size: 18px;
+}
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.pill {
+  border: 1px solid var(--line);
+  background: #121831;
+  border-radius: 12px;
+  padding: 8px 12px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.pill strong { color: var(--text); }
+
+.layout {
+  display: grid;
+  grid-template-columns: 250px minmax(0, 1fr);
+  gap: 22px;
+  padding: 10px 0 55px;
+  align-items: start;
+}
+
+.toc, .paper {
+  border: 1px solid var(--line);
+  background: #151b34ed;
+  border-radius: 20px;
+}
+
+.toc {
+  position: sticky;
+  top: 15px;
+  padding: 18px;
+  max-height: calc(100vh - 30px);
+  overflow: auto;
+}
+
+.toc h2 {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #d7d2ff;
+  margin: 0 0 10px;
+}
+
+.toc nav { display: grid; }
+
+.toc a {
+  font-size: 13px;
+  color: var(--muted);
+  padding: 6px 8px;
+  text-decoration: none;
+  border-radius: 8px;
+  line-height: 1.45;
+}
+
+.toc a:hover {
+  background: #1b2341;
+  color: white;
+}
+
+.paper {
+  padding: clamp(20px, 4vw, 40px);
+  box-shadow: 0 18px 55px #0003;
+}
+
+section {
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+  border-bottom: 1px solid var(--line);
+  scroll-margin-top: 20px;
+}
+
+section:last-of-type {
+  border: 0;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-size: 23px;
+  line-height: 1.3;
+  margin: 0 0 12px;
+}
+
+h3 {
+  font-size: 17px;
+  margin: 18px 0 6px;
+}
+
+p { margin: 9px 0; color: #e2e5f7; }
+
+ul { padding-left: 22px; color: #e2e5f7; }
+
+li { margin: 6px 0; }
+
+.muted, .small { color: var(--muted); }
+
+.notice {
+  background: #202746;
+  border: 1px solid #414b77;
+  border-left: 4px solid var(--purple);
+  border-radius: 12px;
+  padding: 14px 16px;
+  margin: 15px 0;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  padding: 18px;
+  background: linear-gradient(120deg, #28234d, #1b2341);
+  border: 1px solid #51478c;
+  border-radius: 16px;
+}
+
+.contact strong {
+  display: block;
+  font-size: 18px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 14px;
+  background: var(--purple);
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 750;
+}
+
+.small { font-size: 13px; }
+
+.footer {
+  border-top: 1px solid var(--line);
+  padding: 24px 0 36px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.foot {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.topbtn {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  background: #28234d;
+  border: 1px solid #6559b7;
+  border-radius: 99px;
+  padding: 9px 13px;
+  text-decoration: none;
+}
+
+@media (max-width: 780px) {
+  .layout { grid-template-columns: 1fr; }
+  .toc { position: static; max-height: none; }
+  .toc nav { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .paper { padding: 22px; }
+}
+
+@media (max-width: 430px) {
+  .wrap { width: calc(100% - 22px); }
+  .toc nav { grid-template-columns: 1fr; }
+  .hero p { font-size: 16px; }
+  .meta { display: grid; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+
+@media print {
+  body { background: white; color: #111; }
+  .top, .toc, .topbtn { display: none; }
+  .wrap { width: 100%; }
+  .layout { display: block; }
+  .paper {
+    background: white;
+    color: #111;
+    border: 0;
+    box-shadow: none;
+    padding: 0;
+  }
+  p, ul, li, .muted, .small { color: #222; }
+  section { break-inside: avoid; border-color: #ccc; }
+  .contact { background: white; }
+  .contact strong { color: #111; }
+  a { color: #222; }
+}
+</style>
+</head>
+
+<body id="top">
+
+<header class="top wrap">
+  <div class="brand">
+    <span class="logo">B</span>
+    <span>
+      Boardzen
+      <small>by DNS Creation</small>
+    </span>
+  </div>
+</header>
+
+<main class="wrap">
+
+<header class="hero">
+  <span class="tag">Privacy &amp; Transparency</span>
+  <h1>Privacy Policy</h1>
+  <p>
+    This policy explains how Boardzen may handle information when you use
+    its educational tools, AI Tutor, community features, notifications,
+    advertisements, and downloaded learning materials.
+  </p>
+
+  <div class="meta">
+    <span class="pill"><strong>Developer:</strong> Saavej Choudhary</span>
+    <span class="pill"><strong>Brand:</strong> DNS Creation</span>
+    <span class="pill"><strong>Last updated:</strong> 16 October 2026</span>
+  </div>
+</header>
+
+<div class="layout">
+
+<aside class="toc">
+<h2>On this page</h2>
+<nav>
+  <a href="#intro">1. Introduction</a>
+  <a href="#data">2. Information handled</a>
+  <a href="#account">3. Accounts &amp; profiles</a>
+  <a href="#downloads">4. Learning &amp; downloads</a>
+  <a href="#ai">5. AI Tutor</a>
+  <a href="#community">6. Community &amp; messages</a>
+  <a href="#providers">7. Service providers</a>
+  <a href="#ads">8. Advertising</a>
+  <a href="#permissions">9. Permissions</a>
+  <a href="#use">10. How we use data</a>
+  <a href="#sharing">11. Sharing</a>
+  <a href="#retention">12. Retention &amp; deletion</a>
+  <a href="#security">13. Security</a>
+  <a href="#students">14. Student privacy</a>
+  <a href="#rights">15. Your choices</a>
+  <a href="#changes">16. Changes</a>
+  <a href="#contact">17. Contact</a>
+</nav>
+</aside>
+
+<article class="paper">
+
+<section id="intro">
+<h2>1. Introduction</h2>
+<p>
+  Boardzen is an educational Android application that helps students
+  access study materials and learning tools, including content for CBSE
+  and UP Board classes. The app is associated with the brand
+  <b>DNS Creation</b> and developed by <b>Saavej Choudhary</b>.
+</p>
+<p>
+  This policy describes information that may be processed when you use
+  Boardzen. Actual processing depends on the features you use, the
+  permissions you grant, and current service configuration.
+</p>
+<div class="notice">
+  <b>Important:</b> This policy is drafted from the project details
+  available, not a direct inspection of the complete source code or live
+  SDK configuration. Before publication, verify it against the current
+  app build, Google Play Data safety form, and provider settings.
+</div>
+</section>
+
+<section id="data">
+<h2>2. Information handled by Boardzen</h2>
+<p>Depending on the features used, Boardzen may process:</p>
+<ul>
+  <li><b>Account information:</b> phone number, profile name, and other fields you submit when using an account.</li>
+  <li><b>Learning information:</b> selected class, subjects, lesson or paper references, and interactions needed to provide study features.</li>
+  <li><b>Submitted content:</b> text questions, images of questions, chat messages, group details, requests, and feedback you choose to submit.</li>
+  <li><b>Technical information:</b> session, diagnostic, and service information needed to operate the app and protect reliability, depending on implementation and provider configuration.</li>
+  <li><b>Advertising information:</b> where ads are enabled, AdMob and its partners may process ad-related identifiers and interaction or diagnostic information as described in their disclosures.</li>
+</ul>
+</section>
+
+<section id="account">
+<h2>3. Accounts and profiles</h2>
+<p>
+  Boardzen's documented login flow uses a phone number and password.
+  The app and backend may process submitted account and profile
+  information to authenticate you, maintain your profile, and associate
+  content with your account. Confirm the live release's exact fields
+  before publishing.
+</p>
+<p>
+  Keep your password private and avoid putting sensitive information
+  in profile fields or messages.
+</p>
+</section>
+
+<section id="downloads">
+<h2>4. Educational content and offline downloads</h2>
+<p>
+  Boardzen provides learning materials such as notes, PDFs, eBooks, and
+  Previous Year Papers where available. Opening or downloading a document
+  may access it from its configured source.
+</p>
+<p>
+  Offline downloads may store a local copy on your device for use without
+  an internet connection. Removing a local download does not necessarily
+  delete the original server-side document. Files may be removed if you
+  clear app data or uninstall the app, depending on the storage
+  implementation.
+</p>
+</section>
+
+<section id="ai">
+<h2>5. AI Tutor</h2>
+<p>
+  The AI Tutor accepts text questions and, where enabled, images of
+  questions. Submitted content may be sent to Boardzen's backend and an
+  AI provider to generate an answer. The project has been described as
+  using a Gemini model through a Supabase Edge Function; confirm the
+  currently deployed model and provider settings before publication.
+</p>
+<p>
+  Do not submit passwords, identity documents, financial information, or
+  other sensitive personal data. AI answers can be incorrect and should
+  be checked against trusted learning materials. Provider retention and
+  training settings should be reviewed against the provider's current terms.
+</p>
+</section>
+
+<section id="community">
+<h2>6. Community, study groups, and messages</h2>
+<p>
+  If you use community or group features, submitted messages, group
+  details, join requests, and profile information may be stored and shown
+  to relevant group members to provide those features. Other participants
+  may copy or capture content outside Boardzen, so share thoughtfully.
+</p>
+<p>
+  OneSignal is used for app-wide push notifications and announcements,
+  such as updates or new learning content. Do not assume push
+  announcements are private one-to-one chat delivery.
+</p>
+</section>
+
+<section id="providers">
+<h2>7. Backend and third-party providers</h2>
+
+<h3>Supabase</h3>
+<p>
+  Supabase supports backend database and storage features. Information
+  needed for accounts, learning content, community features, and document
+  references may be processed by the configured project.
+</p>
+<p>
+  <a href="https://supabase.com/privacy" target="_blank" rel="noopener noreferrer">
+    Supabase Privacy Policy
+  </a>
+</p>
+
+<h3>OneSignal</h3>
+<p>
+  OneSignal supports push notifications. Depending on configuration,
+  push-subscription identifiers, device/app information, and notification
+  interaction information may be processed.
+</p>
+<p>
+  <a href="https://onesignal.com/privacy_policy" target="_blank" rel="noopener noreferrer">
+    OneSignal Privacy Policy
+  </a>
+</p>
+
+<h3>Google AI services</h3>
+<p>
+  AI Tutor questions or images may be processed by the configured Gemini
+  service through the backend.
+</p>
+<p>
+  <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">
+    Google Privacy Policy
+  </a>
+</p>
+</section>
+
+<section id="ads">
+<h2>8. Advertising</h2>
+<p>
+  Boardzen uses Google AdMob in supported areas of the app. Depending on
+  the configuration, Google and its partners may process advertising
+  identifiers, app interactions, diagnostics, and related information to
+  serve, measure, limit, and protect ads. Ad personalization depends on
+  the live SDK configuration, consent requirements, and device or Google
+  settings.
+</p>
+<p>
+  <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">
+    How Google uses information for advertising
+  </a>
+</p>
+</section>
+
+<section id="permissions">
+<h2>9. Device permissions</h2>
+<p>
+  Permissions depend on the shipped Android build and features used.
+  Image-question submission may use a system photo picker or camera if
+  camera capture is implemented; push notifications may require
+  notification permission; file download and opening may use app storage
+  or file access. Verify the actual Android manifest and runtime requests
+  before publication.
+</p>
+<p>
+  This policy does not claim that Boardzen accesses contacts, microphone,
+  precise location, or other device data unless the current app actually
+  requests and uses that access.
+</p>
+</section>
+
+<section id="use">
+<h2>10. How information is used</h2>
+<ul>
+  <li>Provide account sign-in and profile features.</li>
+  <li>Display learning materials and support offline access.</li>
+  <li>Process AI Tutor questions and return responses.</li>
+  <li>Operate community, group, and messaging features.</li>
+  <li>Send app announcements and notifications.</li>
+  <li>Display and measure advertising where enabled.</li>
+  <li>Maintain security, diagnose errors, prevent abuse, and respond to support requests.</li>
+</ul>
+</section>
+
+<section id="sharing">
+<h2>11. How information may be shared</h2>
+<p>
+  Information may be processed by providers that operate features you
+  use, including backend/storage, AI processing, push notifications, and
+  advertising. Content you post in a group or send to another user may
+  be visible to those recipients. Information may also be disclosed when
+  required by law or reasonably necessary to protect users, the service,
+  or legal rights.
+</p>
+<p>
+  Boardzen does not sell personal information to advertisers as a
+  separate business practice. Advertising providers may process
+  information under their own policies to deliver advertising services.
+</p>
+</section>
+
+<section id="retention">
+<h2>12. Data retention and deletion</h2>
+<p>
+  Information is retained as needed to provide features, maintain service
+  records, meet operational needs, or comply with legal obligations.
+  Specific retention periods depend on the data type and backend/provider
+  configuration; no universal deletion period is promised here.
+</p>
+<p>
+  Local downloads may remain on your device until deleted, app data is
+  cleared, or the app is uninstalled. To ask about your account or request
+  deletion, email
+  <a href="mailto:savejch7464@gmail.com">savejch7464@gmail.com</a>.
+  Do not send your password. Account ownership may need to be verified.
+</p>
+</section>
+
+<section id="security">
+<h2>13. Data security</h2>
+<p>
+  Reasonable safeguards should be used to protect information, such as
+  secure connections and restricted backend access. No online service
+  or storage method can be guaranteed completely secure. If you suspect
+  unauthorized account access, contact the developer.
+</p>
+</section>
+
+<section id="students">
+<h2>14. Students and children's privacy</h2>
+<p>
+  Boardzen is an educational app and may be used by school students.
+  Avoid sharing sensitive personal information in AI questions, profiles,
+  or group chats. Parents or guardians with privacy questions about a
+  student's use may contact the developer.
+</p>
+<p>
+  This policy does not claim certification under a particular children's
+  privacy law or that parental consent is collected in-app. The developer
+  must verify applicable age requirements, consent flows, and Google Play
+  Families and advertising requirements before publication.
+</p>
+</section>
+
+<section id="rights">
+<h2>15. Your choices and privacy rights</h2>
+<p>
+  You can control what you submit, adjust Android notification or app
+  permissions, manage local downloads, and use account controls available
+  in the app. Depending on your location and applicable law, you may
+  have rights to request access, correction, deletion, or other handling
+  of personal information. Contact the developer to make a request.
+</p>
+</section>
+
+<section id="changes">
+<h2>16. Changes to this policy</h2>
+<p>
+  This policy may change when Boardzen features, data practices, providers,
+  or legal requirements change. The revised version will be published at
+  the policy URL with an updated date. Review it periodically.
+</p>
+</section>
+
+<section id="contact">
+<h2>17. Contact the developer</h2>
+<p>
+  For privacy questions, account-data requests, or concerns about Boardzen,
+  contact:
+</p>
+
+<div class="contact">
+  <div>
+    <strong>Saavej Choudhary</strong>
+    <span class="muted">Developer · DNS Creation · Boardzen</span><br>
+    <a href="mailto:savejch7464@gmail.com">savejch7464@gmail.com</a>
+  </div>
+  <a class="btn" href="mailto:savejch7464@gmail.com?subject=Boardzen%20Privacy%20Request">
+    Email us
+  </a>
+</div>
+
+<p class="small">
+  Developer email and privacy contact email: savejch7464@gmail.com
+</p>
+</section>
+
+<p class="small">
+  <b>Before publishing:</b> verify the Android permissions and SDK list;
+  AdMob consent and data settings; OneSignal and AI provider practices;
+  account-deletion and retention behavior; and consistency with the
+  Google Play Data safety form.
+</p>
+
+</article>
+</div>
+</main>
+
+<footer class="footer">
+  <div class="wrap foot">
+    <span>© <span id="year">2026</span> DNS Creation · Boardzen</span>
+    <span>Developer: Saavej Choudhary</span>
+  </div>
+</footer>
+
+<a class="topbtn" href="#top" aria-label="Back to top">↑ Top</a>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
